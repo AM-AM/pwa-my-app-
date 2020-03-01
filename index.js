@@ -10,7 +10,7 @@ function randomValueFromArray(array) {
 
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
-           .register('/pwa-examples/a2hs/sw.js')
+           .register('/pwa-my-app-/sw.js')
            .then(function() { console.log('Service Worker Registered'); });
 }
 
@@ -32,6 +32,7 @@ setInterval(function() {
 
 let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
+addBtn.style.display = 'none';
 
 
 window.addEventListener('beforeinstallprompt', (e) => {
@@ -44,7 +45,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
   addBtn.addEventListener('click', (e) => {
     // hide our user interface that shows our A2HS button
-    
+    addBtn.style.display = 'none';
     // Show the prompt
     deferredPrompt.prompt();
     // Wait for the user to respond to the prompt
