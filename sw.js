@@ -2,14 +2,14 @@ self.addEventListener('install', function(e) {
     e.waitUntil(
       caches.open('video-store').then(function(cache) {
         return cache.addAll([
-          '/pwa-examples/a2hs/',
-          '/pwa-examples/a2hs/index.html',
-          '/pwa-examples/a2hs/index.js',
-          '/pwa-examples/a2hs/style.css',
-          '/pwa-examples/a2hs/images/fox1.jpg',
-          '/pwa-examples/a2hs/images/fox2.jpg',
-          '/pwa-examples/a2hs/images/fox3.jpg',
-          '/pwa-examples/a2hs/images/fox4.jpg'
+          '/pwa-my-app-/',
+          '/pwa-my-app-/index.html',
+          '/pwa-my-app-/index.js',
+          '/pwa-my-app-/style.css',
+          '/pwa-my-app-/images/fox1.jpg',
+          '/pwa-my-app-/images/fox2.jpg',
+          '/pwa-my-app-/images/fox3.jpg',
+          '/pwa-my-app-/images/fox4.jpg'
         ]);
       })
     );
