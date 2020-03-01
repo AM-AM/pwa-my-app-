@@ -4,12 +4,12 @@
   "display": "fullscreen",
   "icons": [
     {
-      "src": "icon/parrot.png",
+      "src": "icon/fox-icon.png",
       "sizes": "192x192",
       "type": "image/png"
     }
   ],
-  "name": "Awesome naturalesa pictures",
+  "name": "Naturaleza App",
   "short_name": "Naturals",
   "start_url": "/pwa-my-app-/index.html"
 }
